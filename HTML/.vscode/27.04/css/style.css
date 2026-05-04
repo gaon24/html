@@ -1,0 +1,28 @@
+.winter{
+    margin: 0px;
+    list-style: none;
+    padding: 10px;
+    list-style-image:url(../icons/winter_16.png)
+}
+.spring{
+    margin: 0px;
+    list-style: none;
+    padding: 10px;
+    list-style-image:url(../icons/spring_16.png)
+}
+.summery{
+    margin: 0px;
+    list-style: none;
+    padding: 10px;
+    list-style-image:url(../icons/summer_16.png)
+}
+.autumn{
+    margin: 0px;
+    list-style: none;
+    padding: 10px;
+    list-style-image:url(../icons/autumn_16.png)
+}
+
+ol > li::marker{
+    font-weight: ;
+}

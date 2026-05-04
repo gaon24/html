@@ -1,0 +1,17 @@
+.right-text{
+    text-align: center;
+    font-size: small;
+}
+.text-gradient{
+    background: linear-gradient(180deg,#666 20%, #ccc 60%, #fff);
+    color: #666;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span {
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    color: black !important;
+}
