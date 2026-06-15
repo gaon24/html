@@ -1,0 +1,15 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heart-icon {
+    width: 100px;
+    filter: grayscale(100%);
+    transition: transform 0s, filter 0s;
+}
+.heart-icon:hover {
+    transform: scale(2); 
+    filter: grayscale(0%);
+}
