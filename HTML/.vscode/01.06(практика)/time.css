@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #006666;
+    border-radius: 50%;
+    position: relative;
+    background-color: #c0c0c0;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius: 5px;
+    background-color: #006666;
+}
+
+/* Часовая стрелка */
+.hour-hand {
+    width: 6px;
+    height: 80px;
+    margin-left: -3px;
+    animation: rotate 60s linear infinite;
+}
+
+/* Минутная стрелка */
+.minute-hand {
+    width: 4px;
+    height: 120px;
+    margin-left: -2px;
+    animation: rotate 5s linear infinite;
+}
+
+.center-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #006666;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
