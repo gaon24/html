@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Терминал сборки букета</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+
+    <div class="terminal">
+        <h1>Сборка вашего букета</h1>
+        <button onclick="calculateBouquet()">Рассчитать стоимость</button>
+        <div id="display-area" class="result"></div>
+    </div>
+
+    <script>
+        function calculateBouquet() {
+            let basePrice = 1500;       
+            let urgencyMarkup = 300;    
+            let discount = 200;         
+            
+            let finalPrice = basePrice + urgencyMarkup - discount; 
+
+            let message = "Спасибо за заказ! <br>" +
+                          "Базовая цена: " + basePrice + " руб.<br>" +
+                          "Наценка за срочность: " + urgencyMarkup + " руб.<br>" +
+                          "Скидка по промокоду: " + discount + " руб.<br>" +
+                          "<strong>Ваша финальная цена: " + finalPrice + " рублей.</strong>";
+            
+            document.getElementById('display-area').innerHTML = message;
+        }
+    </script>
+</body>
+</html>
